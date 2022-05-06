@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline, Container, Grid } from "@mui/material";
-import Navbar from "../Navbar";
+import Navbar from "../navbar/navbar";
 import Typography from "@mui/material/Typography";
 
-import image from "../img/AnimatedGrass.gif";
-import image2 from "../img/otherside.jpg";
+import image from "../../img/AnimatedGrass.gif";
+import image2 from "../../img/otherside.jpg";
 
 const theme = createTheme();
 

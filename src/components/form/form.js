@@ -1,23 +1,14 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
-import { FormControl } from "@mui/material";
 import TextField from "@mui/material/TextField";
-import Box from "@mui/material/Box";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { CssBaseline, Container, Grid } from "@mui/material";
-import Navbar from "../Navbar";
+import { CssBaseline, Container} from "@mui/material";
+import Navbar from "../navbar/navbar";
 import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
 
 const theme = createTheme();
 
 function Form() {
-  const [value, setValue] = React.useState("Controlled");
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
   return (
     <>
       <Navbar />
@@ -25,7 +16,7 @@ function Form() {
       <ThemeProvider theme={theme}>
         <Container sx={{ mt: 15, width: 450, maxWidth: "100%" }}>
           <Typography height="15vh" align="center" variant="h3">
-            Form
+            Order Form
           </Typography>
 
           <div>
